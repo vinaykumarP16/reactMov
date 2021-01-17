@@ -13688,7 +13688,7 @@ const App=()=>{
     };
     if(input.length>0){
         Movies=Movies.filter((i)=>{
-            return i.title.toLowerCase().match(input);
+            return i.title.toLowerCase().match(input.toLowerCase());
         })
     }
     return <div className="main">
